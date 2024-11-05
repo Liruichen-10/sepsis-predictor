@@ -20,12 +20,12 @@ feature_names = [
 st.title("Predictor of Sepsis Risk")
 
 # Collect user input
-uWBC = st.number_input("Urinary WBC (uWBC):", min_value=0, max_value=500, value=100)
+uWBC = st.number_input("Urinary WBC (uWBC):", min_value=0, max_value=5000, value=100)
 double_j_duration = st.number_input("Double-J stent duration (days):", min_value=0, max_value=365, value=30)
-WBC = st.number_input("White Blood Cell Count (WBC):", min_value=0, max_value=50, value=10)
+WBC = st.number_input("White Blood Cell Count (WBC):", min_value=0, max_value=100, value=10)
 ALT = st.number_input("Alanine transaminase (ALT):", min_value=0, max_value=500, value=35)
-CR = st.number_input("Creatinine (CR):", min_value=0, max_value=10, value=1)
-Albumin = st.number_input("Albumin (g/dL):", min_value=1, max_value=5, value=4)
+CR = st.number_input("Creatinine (CR):", min_value=0, max_value=10000, value=1)
+Albumin = st.number_input("Albumin (g/dL):", min_value=1, max_value=200, value=4)
 stone_burden = st.number_input("Stone burden (mm^2):", min_value=0, max_value=1000, value=50)
 surgical_duration = st.number_input("Surgical Duration (minutes):", min_value=0, max_value=600, value=90)
 
